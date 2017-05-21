@@ -1,0 +1,333 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SenseNet Platform</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./SenseNet_Files/style.css">
+  <link rel="stylesheet" href="./SenseNet_Files/css">
+  <link rel="stylesheet" href="./SenseNet_Files/font-awesome.min.css">
+<!--	<link rel="stylesheet" type="text/css" href="../styl.css"> -->
+<!--	<link rel="stylesheet" type="text/css" href="../print_postav.css" media="print" /> -->
+<link rel="icon" href="./SenseNet_Files/favicon.ico">
+	<meta name="author" content="labka.cz" />
+	<meta name="description" content="SenseNet platform which is able to measure, parse, and predict data about air polution in industrial region Ostrava" />
+	<meta name="keywords"  content="SenseNet, SensoricNet, Sense Net, Sensoric Net, AI, platform, prediction, parser, neural network, hackerspace, labka.cz, labka, ostrava, hackerspaces, polution, air, environmental, environment"/>
+</head>
+
+<style>
+
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #000;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<link rel="stylesheet" type="text/css" href="chrome-extension://pkehgijcmpdhfbdbbnkijodmdjhbjlgp/skin/socialwidgets.css"></head><body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+ <!--<img src="images/logo2.png" style="width:100%"> -->
+  <p> </p>
+  <a href="index.html#data" class="w3-bar-item w3-button w3-padding-large w3-red">
+    <i class="fa fa-bar-chart w3-large"></i>
+    <p>DATA</p>
+  </a>
+  <a href="index.html#oprojektu" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-object-group w3-large"></i>
+    <p>SenseNet</p>
+  </a>
+  <a href="index.html#aktualne" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-cogs w3-large"></i>
+    <p>Aktuálně</p>
+  </a>
+<a href="index.html#media" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-television w3-large"></i>
+    <p>MEDIA</p>
+  </a>
+  <a href="index.html#kontakt" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-sitemap w3-large"></i>
+    <p>Kontakt</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="index.html#data" class="w3-bar-item w3-button" style="width:25% !important">DATA</a>
+    <a href="index.html#oprojektu" class="w3-bar-item w3-button" style="width:25% !important">Sensnet</a>
+    <a href="index.html#aktualne" class="w3-bar-item w3-button" style="width:25% !important">Aktuálně</a>
+<a href="index.html#media" class="w3-bar-item w3-button" style="width:25% !important">MEDIA</a>
+    <a href="index.html#kontakt" class="w3-bar-item w3-button" style="width:25% !important">Kontakt</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+	<header class="w3-container w3-padding-32 w3-center w3-black" id="data">
+    <img src="./SenseNet_Files/mnohosten.png" alt="Graf PM1, PM2.5 a PM10 a dalsi srandy" class="w3-image center">
+
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="oprojektu">
+    <h2>O projektu SenseNet</h2>
+		<p><img src="./SenseNet_Files/logo_SN.png" alt="Logo of project SenseNet" class="w3-image center" width="150" height="150" data-pin-nopin="true"></p>
+  	<h3>" Kolik odstínů šedi má Ostrava? A dají se měřit? "</h3>
+    <p>Nápad postavit platformu sensenet dostal jasné obrysy někdy okolo 25.září 2016 v rámci enviromentálně zaměřeného <a href="http://www.nadacevodafone.cz/programy/grantovy-program/podporene-projekty/iot-environhackathon.html">hackathonu</a> pořádaného <a href="http://www.nadacevodafone.cz/">Nadací Vodafone</a>, kterého se jako "tým <a href="https://labka.cz">Labka.cz</a>" zúčastnilo několik členů našeho ostravského hackerspace ve spolupráci s lidmi z Vodadafone a dokonce se zástupci města Ostrava. V rámci akce se našemu týmu podařilo porotu zaujmout natolik, že po krátkém vyjednávání nám byla nabídnuta spolupráce a popora ze strany Nadace Vodafone. Labka.cz sestavila tým a pustila se do realizace.
+</p>
+
+		<p>Hlavním cílem projektu je vytvoření chytré senzorické sítě, která bude sbírat a zpracovávat data nejen o aktuálním znečištěním ovzduší, ale také i veškeré jiné údaje, které se dají využít k predikci vývoje smogové situace (například dopravní aktivitu v určité části města).<br />
+Kromě dat poskytnutých třetími stranami vyvíjíme i vlastní senzorické řešení, které nám umožní flexibilně sbírat data i v místech dosud nepokrytých stanicemi měřícími úroveň znečištění ovzduší, ale také vyplnit mezeru v dostupnosti primárních, neplacených a ucelených relevantních dat, která se ukázala být zásadní.<br />
+Naměřená i předzpracovaná data budou přenesena ze zenzorických modulů a úložišť třetích stran do databáze pomocí technologie NB-IoT (případně dalších), kde dojde k jejich zpracování pomocí algoritmů modulu "Neuronové Sítě" a dále budou poskytována pomocí dokumentovaného API, a to jak v nezpracované podobě, tak jako zpracovaná data po průchodu Neuronovou Sítí.<br />
+Výstupem celého projektu ovšem nemá být pouze sběr a parsování dat o kvalitě ovzduší na Ostravsku a jejich zpřśtupnění, ale také predikce budoucího vývoje, na základě které bude možno řídit a ovládat například vzduchotechniku v "inteligentních budovách", případně další využití.
+</p>
+<p>
+Veřejná část dokumentace projektu: <a href="https://github.com/Labka-cz/SensorNet">https://github.com/Labka-cz/SensorNet</a>
+
+<!-- PUVODNI BARVY by IVAN
+<h2 class="w3-text-light-grey ">Nadace Vodafone</h2>
+<h3 class="w3-text-sensenet">"Posporujeme sociální a technologické inovace"</h3>
+-->
+
+<h2>Nadace Vodafone</h2>
+<h3>"Posporujeme sociální a technologické inovace"</h3>
+
+<img class="obrL" src="./SenseNet_Files/nadace_vodafone.png" alt="Logo Nadace Vodafone" width="281">
+
+<!-- <h3 class="w3-text-sensenet "> -->
+"Nadace Vodafone funguje v České republice již 10 let. Za tuto dobu se dostala na přední místa v hodnocení firemních nadací a patří mezi nejdůležitější podporovatele a investory do technologických sociálních inovací. Posláním Nadace Vodafone je dlouhodobé a strategické propojování aktérů na trhu sociálního kapitálu a zvyšování jejich kapacit k&nbsp;řešení globálních problémů na lokální úrovni. Využijeme všechny dostupné prostředky, včetně mobilních technologií, sítí a know-how společnosti Vodafone, k tomu, aby naše činnost měla co největší pozitivní dopad na kvalitu života lidí v&nbsp;České republice."
+<!--</h3>-->
+<p>Více o nadaci vodafone <a href="http://www.nadacevodafone.cz/">zde</a>.</p>
+
+
+<h2>Labka Hackerspace</h2>
+<h3>"Váš oblíbený ostravský Hackerspace "</h3>
+
+<p>
+<!--
+<img src="./SenseNet_Files/logo_qr.png" alt="logo" class="w3-image center" width="100" height="100" style="margin-top: 50px;"></p>
+-->
+
+<img class="obrL" src="./SenseNet_Files/labka_logo.png" alt="logo labky" width="280px">
+<p>Hackerspace je forma komunitního projektu vzniklá někdy v osumdesátých letech minulého století v západním Berlíně komunitou koníčkářů, které bavilo vyvýjet, chápat a rozebírat stroje a přístroje. Asi vůbec první hackerspace v západním světě byl tedy <a href="https://www.ccc.de/en/">Chaos Computer Club</a> Berlin, nicméně fenomén se brzy začal šířit do celého světa a USA je v téhle oblasti asi hlavní leader se světově proslulými hackerspace jako je například <a href="https://www.noisebridge.net/">Noise Bridge</a>.<br />
+V ČSSR v době totality podobé aktivity orgainzovaly instituce jako například Dům Dětí a Mládeže případně Svazarm pod pojmem Stanice Mladých Techniků a Radioamatérů, nicméně po Sametové Revoluci některé "Stanice" přetrvaly, ale pozděj je začaly nahrazovat zájmové organizace zřizované přímo jejich členy právě po vzoru hackerspaces. Prní Český hackerspace byl Pražský <a href="https://brmlab.cz/">BRMLAB</a>, následoval Brněnský <a href="https://wiki.hackerspaces.org/Base48">Base48</a> a od konce roku 2015 také Ostravská <a href="https://labka.cz">Labka</a>.<br />
+Cílem Labky je sdružovat komunitu lidí, kteří mají zájem o vědu a techniku, podporovat vzdělání v této oblasti a na základě komunitní dobrovolné práce rozvíjet technologie v různých oborech zahrnujících například počítačové sítě, operační systémy, hardware, ale také napřéklad projekty v oblasti biologie či chemie.<br />
+Labka jako taková je zřizována z darů a členských příspěvků, případně grantů a výdělku projektů a školení a to jako zájmový spolek (dříve nezisková organizace).<br />
+</p>
+<p>Více o Labce <a href="http://www.labka.cz/">zde</a>.
+</p>
+<!--</div>-->
+
+<img src="./SenseNet_Files/schema.png" alt="schema" class="obrR" width="500px">
+
+<div id="aktualne">
+
+<h2>Aktuální stav projektu</h2>
+
+	<h3>"V současné době se snažíme nastavit základní směry ve všech částech projektu. Hodně experimentujeme s technologiemi, komunikujeme s dalšími firmami a odborníky a snažíme se najít pro každou část platformy ten nejlepší základ, na kterém budeme dále stavět."</h3>
+
+    <p class="w3-wide">Návrh infrastruktury</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:77%"></div>
+    </div>
+    <p class="w3-wide">Definice a testování přenosu dat</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:50%"></div>
+    </div>
+    <p class="w3-wide">Vývoj prototypu měřicího boxu</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:45%"></div>
+    </div>
+    <p class="w3-wide">Vývoj algoritmu neuronové sítě</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:45%"></div>
+    </div><br>
+
+
+<div id="media">
+<h2>MEDIA</h2>
+
+  <h3>" Napsali o nás "</h3>
+    <p>
+<a href="https://polar.cz/porady/regionalni-zpravy/regionalni-zpravy-polar-02-03-2017-16-00">https://polar.cz/porady/regionalni-zpravy/regionalni-zpravy-polar-02-03-2017-16-00</a>
+</p>
+<a href="http://www.nadacevodafone.cz/novinky/sensenet.html">http://www.nadacevodafone.cz/novinky/sensenet.html</a>
+<p></p>
+
+<div id="team">
+
+    <h2>TEAM</h2>
+
+  <h3> " OSM STATEČNÝCH "</h3>
+    <p>
+</p></div>
+
+    <!-- team -->
+
+
+<div class="w3-container">
+
+  <div class="w3-third">
+    <div class="w3-card-2">
+      <p></p>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-2">
+      <img src="./SenseNet_Files/tomas.png" style="width:70%">
+      <div class="w3-container">
+        <h3 class="w3-text-sensenet_members">Tomáš Petrů - Manager, infrastruktura</h3>
+				<p></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-2">
+   <p></p>
+    </div>
+</div>
+
+
+
+<div class="w3-row-padding w3-margin-top">
+
+	<div class="w3-third">
+		  <div class="w3-card-2">
+		    <img src="./SenseNet_Files/adam.png" style="width:70%">
+		    <div class="w3-container">
+		      <h3 class="w3-text-sensenet_members">Adam Lichnovský - AI</h3>
+				<p> </p>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="w3-third">
+		  <div class="w3-card-2">
+		    <img src="./SenseNet_Files/pavel.png" style="width:70%">
+		    <div class="w3-container">
+		      <h3 class="w3-text-sensenet_members">Pavel Polach - Sensory</h3>
+				<p> </p>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="w3-third">
+		  <div class="w3-card-2">
+		    <img src="./SenseNet_Files/petr.png" style="width:70%">
+		    <div class="w3-container">
+		      <h3 class="w3-text-sensenet_members">Petr Vavřín - Backend, data</h3>
+				<p> </p>
+		    </div>
+		</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="w3-row-padding w3-margin-top">
+
+	<div class="w3-third">
+		  <div class="w3-card-2">
+		    <img src="./SenseNet_Files/radek.png" style="width:100%">
+		    <div class="w3-container">
+		      <h3 class="w3-text-sensenet_members">Radek Svoboda - AI</h3>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="w3-third">
+		  <div class="w3-card-2">
+		    <img src="./SenseNet_Files/jan.png" style="width:100%">
+		    <div class="w3-container">
+		      <h3 class="w3-text-sensenet_members">Jan Bětík - Sítě, Infrastruktura</h3>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="w3-third">
+		  <div class="w3-card-2">
+		    <img src="./SenseNet_Files/jiri.png" style="width:100%">
+		    <div class="w3-container">
+		      <h3 class="w3-text-sensenet_members">Jiří Sléžka - Backend</h3>
+
+		    </div>
+		</div>
+
+</div>
+
+
+
+
+<div class="w3-row-padding w3-margin-top">
+
+  <div class="w3-third">
+    <div class="w3-card-2">
+      <p></p>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-2">
+      <img src="./SenseNet_Files/eva.png" style="width:100%">
+      <div class="w3-container">
+        <h3 class="w3-text-sensenet_members">Eva Klepáčová - Public relations</h3>
+				<p></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-2">
+   <p></p>
+    </div>
+</div>
+
+  </div>
+
+  <div id="kontakt">
+
+
+  <!-- Contact Section -->
+<!--  <div class="w3-padding-64 w3-content w3-text-grey" id="contact"> -->
+    <h2>Kontakty</h2>
+
+<center>
+    Tomáš Petrů<br />
+    Telefon: +00 420 721 007 507 <br />
+    Email: tpetru@labka.cz<br />
+</center>
+
+  <!-- End Contact Section -->
+  </div>
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-small w3-text-grey w3-xxlarge" style="text-align : center">
+    <a href="https://www.facebook.com/labka.cz"><i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+  <!-- End footer -->
+  </a></footer><a href="https://www.facebook.com/labka.cz">
+
+<!-- END PAGE CONTENT -->
+</a></div><a href="https://www.facebook.com/labka.cz">
+
+
+
+
+</a></div></div></div></div></div><span style="border-radius: 3px; text-indent: 20px; width: auto; padding: 0px 4px 0px 0px; text-align: center; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; color: rgb(255, 255, 255); background: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==&quot;) 3px 50% / 14px 14px no-repeat rgb(189, 8, 28); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; -webkit-font-smoothing: antialiased; top: 54px; left: 390px;">Save</span></body></html>
