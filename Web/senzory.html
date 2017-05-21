@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SenseNet : modul Senzory</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="./SenseNet_Files/style.css">
+  	<link rel="stylesheet" href="./SenseNet_Files/css">
+  	<link rel="stylesheet" href="./SenseNet_Files/font-awesome.min.css">
+  	<link rel="icon" href="./SenseNet_Files/favicon.ico">
+	<meta name="author" content="labka.cz" />
+	<meta name="description" content="SenseNet platform which is able to measure, parse, and predict data about air polution in industrial region Ostrava" />
+	<meta name="keywords"  content="SenseNet, SensoricNet, Sense Net, Sensoric Net, AI, platform, prediction, parser, neural network, hackerspace, labka.cz, labka, ostrava, hackerspaces, polution, air, environmental, environment"/>
+</head>
+
+<style>
+
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #000;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<link rel="stylesheet" type="text/css" href="chrome-extension://pkehgijcmpdhfbdbbnkijodmdjhbjlgp/skin/socialwidgets.css"></head><body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+ <!--<img src="images/logo2.png" style="width:100%"> -->
+  <p> </p>
+  <a href="index.html#oprojektu" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-object-group w3-large"></i>
+    <p>SenseNet</p>
+  </a>
+
+    <a href="senzory.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-object-group w3-large"></i>
+    <p>modul Sense</p>
+  </a>
+
+   <a href="net.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-object-group w3-large"></i>
+    <p>modul Net [NB-IoT a další]</p>
+  </a>
+
+   <a href="brain.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-object-group w3-large"></i>
+    <p>modul Brain [Neural Network]</p>
+  </a>
+
+  <a href="index.html#data" class="w3-bar-item w3-button w3-padding-large w3-red">
+    <i class="fa fa-bar-chart w3-large"></i>
+    <p>DATA</p>
+  </a>
+
+
+  <a href="index.html#aktualne" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-cogs w3-large"></i>
+    <p>Aktuálně</p>
+  </a>
+<a href="index.html#media" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-television w3-large"></i>
+    <p>MEDIA</p>
+  </a>
+  <a href="index.html#kontakt" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-sitemap w3-large"></i>
+    <p>Kontakt</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="index.html#oprojektu" class="w3-bar-item w3-button" style="width:25% !important">Sensnet</a>
+	<a href="senzory.html" class="w3-bar-item w3-button" style="width:25% !important">modul Sense</a>
+	<a href="net.html" class="w3-bar-item w3-button" style="width:25% !important">modul Net [NB-IoT a další]</a>
+	<a href="brain.html" class="w3-bar-item w3-button" style="width:25% !important">modul Brain [Neural Network]</a>
+    <a href="index.html#data" class="w3-bar-item w3-button" style="width:25% !important">DATA</a>
+    <a href="index.html#aktualne" class="w3-bar-item w3-button" style="width:25% !important">Aktuálně</a>
+	<a href="index.html#media" class="w3-bar-item w3-button" style="width:25% !important">MEDIA</a>
+    <a href="index.html#kontakt" class="w3-bar-item w3-button" style="width:25% !important">Kontakt</a>
+  </div>
+</div>
+
+
+<h2>Modul SENSE : hardwarové senzory </h2>
+<div>
+Celý projekt sponzorovaný z grantu Nadace Vodafone byl už od počátku zaměřen na životí prostředí v Ostrave, a my se rozhodli začít vzduchem, který Ostravu trápí asi tak nejvíc, ačkoliv to nění rozhodně jediný problém.<br />
+Nejdříve jsme si mysleli, že bude možné snadno vzít data od třetích stran, sestavit z nich vhodné datové sety a ty potom moužít pro modul Neurální Sítě, tak, aby se tento "mozek" mohl začít snadno učit. Už při prvoním výzkumu se však ukázalo, že svobodně dostupná a přesná data jsou vzácná jako onen pověstný šafrán, a pokud s nějakými chceme pracovat, musíme si je sami vyrobit.<br />
+Vzhledem k tomu, že Vodafone spojil grant s testováním nově nasazované technologie NB-IoT, sloužící k dlouhodobému spolehlivému přenosu dat z pro takzvaný Internet Věcí, měli jsme jakousi možnost použít testovací infrastrukturu, do které jsme se rozhodli připojit elektrochemické senzory, které měří několik základních faktorů znečiětění ovzduší --------IVAN: DOPLN PROSIM CO VSECHNO MERIME ------<br />
+<br />
+Senzory se tedy staly jakýmsi základním kamenem projektu, SENSE tedy SMYSLY.<br />
+
+<h3>Aktuální status projektu</h3>
+
+V první fázi návrhu senzorů jsme navrhli hardwarové řešení plošného spoje, který dokáže propojit komerčně dostupné součástky tak, aby nejen byly velmi přesné a připravené pro profesionální kalibraci podle České legislativy, ale také pro profesionální komerční či vědecké nasazení.<br />
+<br />
+Další fáze sestávala právě z návrhu hardwarového řešení, které umožní přenos naměřených dat ze samotného senzorického modulu na servery, kde budou data dále zpracovávána. Jedná se tedy o jakési propojení smyslů pomocí nervových drah, které povedou do mozku.<br />
+
+<h3>Budoucí fáze projektu</h3>
+
+Budoucí fáze tohoto modulu projektu SenseNet bude sestávat z kalibrace v laboratořích a certifikace senzorů, tak aby mohly být použity nejen v našem řešení, ale také v profesionálním komerčním nasazení (předpokládaný první partner by mohla být firma, která vyrábí léčiva, pro jejíž výrobu jsou kontrolované environmentální podmínky zásadní).<br />
+<br />
+Další fáze, která je již částečně v běhu, je pak výroba obalu a uchycení pro senzoryckou soustavu tak, aby vydržely i v náročnžch podmínkách bez ohledu na nepřźeň počasí a další faktory.<br />
+<br />
+Přesahem projektu je pak návrh vhodného a ekologického napájení nezávyslého na dostupnosti elektrické sítě. Tato část je spíše volitelná a záleží především na tom, zda se bude dostávat lidí, peněz a času.<br />
+
+<h3>Cíl</h3>
+Cílem projektu je pak výroba prvních deseti kalibrovaných prototypů, které bude možné umístit na střechy domů v Ostravě. Takto nasazené senzory budeme testovat jak z pohledu kvality měření v čase, tak z pohledu schopnosti NB-IoT přenášet spolehlivě a dlouhodobě data.<br />
+Přesahem je pak výroba "krabičky", která bude splňovat všechny požadavky koncových uživatel, aby tato mohla být komerčně nasazena u našich případných partnerů, nejen v samotném projektu SenseNet.<br />
+Dalším výstupem pak bude kompletní dokumentace hardwarového řešení pod OpenSource licencí.<br />
+</div>
+
+</body>
+</html>
+
