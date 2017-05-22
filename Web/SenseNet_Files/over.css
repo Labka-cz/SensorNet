@@ -1,0 +1,203 @@
+/* 
+written mostly by Over@labka.cz, 3 colum design is adapted version from https://codepen.io        
+last update: 22 May 2017
+license: MIT
+ */
+
+/*royalblue*/
+
+/*#D0D0D0*/
+/* main definition: background an foregrount colour, font family */
+body {background-color : black ; color: #D0D0D0  ; font-size: 11pt; font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;} 
+table {background-color : black ; color: #D0D0D0  ; font-size: 11pt; font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;} 
+
+/*firebrick*/
+h1{color : firebrick; font-size:18pt; margin: 10px 0 10px 0; font-style: strong}
+h2{color : firebrick; font-size:16pt; margin: 10px 0 10px 0;}
+h3{color : firebrick; font-size:12pt; margin: 10px 0 10px 0; font-style: strong}
+h4{color : firebrick; font-size:10pt; margin: 10px 0 10px 0; font-style: strong}  
+
+/*#6699CC*/
+/*#99CCFF*/
+a:link    {color: #6699CC ; text-decoration:none}
+a:visited {color: #6699CC; text-decoration:none}
+a:hover   {color: firebrick ; text-decoration:none}
+/*006699*/
+
+/* formating of pictures : L = left, R = right, C = center, no borders, floating text around */
+.obrL   {float : left; margin : 0 5px 0 0; border: 0px solid}
+.obrR   {float : right; margin : 0 5px 0 0; border: 0px solid }
+.obrC   {float : center; margin : 20px 5px 20px 0; border: 0px solid }
+.secret {color : black};
+
+/* special parts of test, quote, link, hilighted */
+.citace {font-size: 8pt; color: #E0E0E0 ; text-align:right; font-style: italic}
+.odkud  {font-size:  7pt; color: #E0E0E0 ; text-align:right; font-style: italic}
+.zvyraz {/*background-color : #D0D0D0  ;*/color: red  ;}
+
+/* floating menu hack
+logic: menu must be inside of obal, it is causing floating functional in Firefox and advanced, and static in
+MSIE and older browser. Not tested if it is adaptive design */
+
+.menu { background-color : black ; color: #D0D0D0  ; font-size: 9pt; font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;
+	border: solid;  
+        border-width: 1px; 
+        padding: 10px;
+        margin:   3px;
+        position: fixed; top: 0; right: 77%; left: 0;
+        }
+
+.obal { border: none;  
+        border-width: 1px;
+		position: fixed; top: 0; width: 22%; heigh: 100%;}
+
+/* main part, where most of text should be - not tested how adaptive it is */		
+.celek {border: solid;  
+        border-width: 1px;
+        padding: 10px; 
+        margin:  3px;
+        position: absolute; top: 0; left: 23%; right:0%;
+        }
+.usek {
+        color: #D0D0D0 ; 
+        border:solid; 
+        border-width: 0px 0px 0px 0px;
+        padding: 0px; 
+        margin: 0px 0px 30px 0px;
+        position: relative; top:auto; left: auto; right:auto;
+        }
+
+
+/* 3columns responsive design */
+
+body { 
+/*  font-family: 'Open Sans', sans-serif;
+  color: #666; */
+}
+
+/* STRUCTURE */
+
+#pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+header {
+	clear: both;
+	padding: 0 15px;
+}
+#content {
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#middle {
+	width: 294px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#sidebar {
+	width: 270px;
+	padding: 5px 15px;
+	float: left;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+
+#content {
+/*	background: #f8f8f8; */
+}
+#sidebar {
+/*	background: #f0efef; */
+}
+header, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+#pagewrap, header, #content, #middle, #sidebar, footer {
+/*	border: solid 1px #ccc; */
+}
+
+/* end of 3 columns responsible design */
+
+
+
+/* border-less iFrame, where seamless is not supported */
+iframe[seamless] {
+    border: none;
+}
+
