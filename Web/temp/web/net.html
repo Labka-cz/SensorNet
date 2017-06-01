@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SenseNet : modul Senzory</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="./SenseNet_Files/over.css">
+<!--  	<link rel="stylesheet" href="./SenseNet_Files/css">
+  	<link rel="stylesheet" href="./SenseNet_Files/font-awesome.min.css"> -->
+  	<link rel="icon" href="./SenseNet_Files/favicon.ico">
+	<meta name="author" content="labka.cz" />
+	<meta name="description" content="SenseNet platform which is able to measure, parse, and predict data about air polution in industrial region Ostrava" />
+	<meta name="keywords"  content="SenseNet, SensoricNet, Sense Net, Sensoric Net, AI, platform, prediction, parser, neural network, hackerspace, labka.cz, labka, ostrava, hackerspaces, polution, air, environmental, environment"/>
+</head>
+
+<body>
+<!-- Imported floating menu -->
+
+<div class="obal">
+<div class="menu">
+	<iframe src="menu.html" seamless></iframe>
+</div>
+</div>
+
+<div class="celek">
+
+
+
+<h2>Modul NET : infrastruktura </h2>
+<div>
+Mezi moduly Smysly [Sense] a Mozek [Brain] musí samozřejmě existovat nějaké spojění, tak jako jsou jím v lidském těle nervy.<br />
+V našem případě je takových spojení potřeba několik, která se budou vzájemě překrívat, protože komunikace je zásadní pro každý projekt a proto je potřebné mít oněch pomyslných nervových soustav několik a na několika různých vrstvách.<br />
+
+<h3>NB-IoT</h3>
+NB-ÍoT je experimentální techologie bezdrátového přenosu malých množtví dat pomocí existující bezdrátové telefonní a datové sítě.<br />
+Technologie se do Labky dostala ve velmi počátečním stádiu, kdy defacto existovala pouze myšlenka a několik kusů hardware v podobě testovacích chipů.<br />
+Labce se podařilo okolo chipu vybudovat celou hardwarovou platformu tak, že tato může být připojena k senzorickému modulu, a bude možné testovat její stabilitu, pokrytí a náročnost na napájení.<br />
+Tato část projektu je již téměř dokončena a nachází se ve stádiu pre-produkčního testování.<br /> 
+Díky tomu, že se jedná o technologii patentovanou a ke své fuknci využívající produkční komerční frekvence vlastněné společností Vodafone, nebude tato část modulu zařazena v OpenSource verzi projektu SenseNet
+
+<h3>LoraWan</h3>
+Nekomerční, OpenSource obdoba NB-IoT sestávající z open hardware i open software, která využívá nekomerční, ale také negarantovaná vysílací pásma pro rádiový přenos.<br />
+Modul bude zařazen do OpenSource dokumentace SenseNet a měl by být plně schopen nahradit komerční, patentované řešení.<br />
+V součastné době ještě neproběhlo testování v Labce, nicméně hardware senzorů je pro LoraWan nasazení připraven.
+
+<h3>Interní síťová infrastruktura</h3>
+Interně bude pro síťování projektu použita standarndní implementace IPv4 a do budoucna IPv6.
+Tato část projektu je již hotová v pre-produkčním stadiu, ale chybý zatím dokumentace pro jiné než testovací a laboratorní použití. Více informací bude následovat v brzké době.
+
+
+<h3>Cíl</h3>
+Cílem projektu je vytvoření rozhraní mezi senzory a servery na kterých se budou data zpracovávat, a to tak, aby bylo možné projekt zveřejnit jak pod OpenSource licencemi, jako kompletní, preprodukovatelné řešení, tak aby na druhou stranu bylo možné enterprise nasazení za pomoci patentovaných technologií a garantovaných vysílacích pásem.<br />
+</div>
+
+</body>
+</html>
+
