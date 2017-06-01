@@ -1,15 +1,16 @@
 /* 
 written mostly by Over@labka.cz, 3 colum design is adapted version from https://codepen.io        
-last update: 22 May 2017
+last update: 1 Jun 2017
 license: MIT
+INVERTED VERSION: czech flag colourscheme, 0.1
  */
 
 /*royalblue*/
 
 /*#D0D0D0*/
 /* main definition: background an foregrount colour, font family */
-body {background-color : black ; color: #D0D0D0  ; font-size: 11pt; font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;} 
-table {background-color : black ; color: #D0D0D0  ; font-size: 11pt; font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;} 
+body {background-color : #ffffff ; color: black  ; font-size: 11pt; font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;} 
+table {background-color : #ffffff ; color: black  ; font-size: 11pt; font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;} 
 
 /*firebrick*/
 h1{color : firebrick; font-size:18pt; margin: 10px 0 10px 0; font-style: strong}
@@ -19,8 +20,8 @@ h4{color : firebrick; font-size:10pt; margin: 10px 0 10px 0; font-style: strong}
 
 /*#6699CC*/
 /*#99CCFF*/
-a:link    {color: #6699CC ; text-decoration:none}
-a:visited {color: #6699CC; text-decoration:none}
+a:link    {color: #0a66d7 ; text-decoration:none}
+a:visited {color: #0a66d7; text-decoration:none}
 a:hover   {color: firebrick ; text-decoration:none}
 /*006699*/
 
@@ -39,23 +40,23 @@ a:hover   {color: firebrick ; text-decoration:none}
 logic: menu must be inside of obal, it is causing floating functional in Firefox and advanced, and static in
 MSIE and older browser. Not tested if it is adaptive design */
 
-.menu { background-color : black ; color: #D0D0D0  ; font-size: 9pt; font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;
+.menu { background-color : #ffffff ; color: black  ; font-size: 9pt; font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;
 	border: solid;  
         border-width: 1px; 
         padding: 10px;
         margin:   3px;
         position: fixed; 
-	top: 0; 
-	right: 77%; 
-	left: 0;
+		top: 0; 
+		right: 77%; 
+		left: 0;
         }
 
 .obal { border: none;  
         border-width: 1px;
-	position: fixed; 
-	top: 0; 
-	width: 23%; 
-	height: 100%;}
+		position: fixed; 
+		top: 0; 
+		width: 23%; 
+		height: 100%;}
 
 /* main part, where most of text should be - not tested how adaptive it is */		
 .celek {border: solid;  
@@ -204,10 +205,11 @@ header, #content, #middle, #sidebar {
 
 /* border-less iFrame, where seamless is not supported */
 iframe[seamless] {
-    border: none;
+	    border: none;
 	height: 190px;
 	width: 100%;
 	margin:0; 
 	padding:0; 
 	overflow:hidden;
 }
+
