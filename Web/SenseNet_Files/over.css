@@ -204,11 +204,10 @@ header, #content, #middle, #sidebar {
 
 /* border-less iFrame, where seamless is not supported */
 iframe[seamless] {
-    	border: none;
-	height: 100%
-	width: 100%; 
+    border: none;
+	height: 190px;
+	width: 100%;
 	margin:0; 
 	padding:0; 
 	overflow:hidden;
 }
-
