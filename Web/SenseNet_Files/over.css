@@ -11,20 +11,41 @@ INVERTED VERSION: czech flag colourscheme, 0.1
 /*#D0D0D0*/
 /* main definition: background an foregrount colour, font family */
 body {
-	background-color : #162955 ; 
+	background-color : #030F2C ; 
 	color: #7887AB  ; 
 	font-size: 11pt; 
-	font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;
+	font-family: Arvo;
+	/*font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;*/
 	/*background-image: url("background.PNG");
     	background-repeat: round;*/
 	} 
 table {background-color : #ffffff ; color: black  ; font-size: 11pt; font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;} 
 
 /*firebrick*/
-h1{color : firebrick; font-size:18pt; margin: 10px 0 10px 0; font-style: strong}
-h2{color : firebrick; font-size:16pt; margin: 10px 0 10px 0;}
-h3{color : firebrick; font-size:12pt; margin: 10px 0 10px 0; font-style: strong}
-h4{color : firebrick; font-size:10pt; margin: 10px 0 10px 0; font-style: strong}  
+h1{color : firebrick; 
+	font-family: Arvo;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;}
+h2{color : firebrick; 
+	font-family: Arvo;
+	font-size:16pt; 
+	font-style: normal;
+	font-variant: normal;
+	margin: 10px 0 10px 0;}
+h3{color : firebrick; 
+	font-family: Arvo;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;}
+h4{color : firebrick; font-size:10pt; margin: 10px 0 10px 0; 
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;}  
 
 /*#6699CC*/
 /*#99CCFF*/
