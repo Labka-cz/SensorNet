@@ -28,8 +28,9 @@ h4{color : firebrick; font-size:10pt; margin: 10px 0 10px 0; font-style: strong}
 
 /*#6699CC*/
 /*#99CCFF*/
-a:link    {color: #0a66d7 ; text-decoration:none}
-a:visited {color: #0a66d7; text-decoration:none}
+/*0a66d7* - ugly blue */
+a:link    {color: #485A87 ; text-decoration:none}
+a:visited {color: #485A87; text-decoration:none}
 a:hover   {color: firebrick ; text-decoration:none}
 /*006699*/
 
@@ -67,6 +68,11 @@ MSIE and older browser. Not tested if it is adaptive design */
 		top: 0; 
 		width: 23%; 
 		height: 100%;}
+
+.menu-item span {
+  		border: 1px solid #4F628E;
+  		padding: 5px;
+}"
 
 /* main part, where most of text should be - not tested how adaptive it is */		
 .celek {border: solid;  
