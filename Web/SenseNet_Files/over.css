@@ -54,15 +54,15 @@ a:hover   {color: firebrick ; text-decoration:none}
 .obrL   {float : left; margin : 0 5px 0 0; border: 0px solid}
 .obrR   {float : right; margin : 0 5px 0 0; border: 0px solid }
 .obrC   {float : center; margin : 20px 5px 20px 0; border: 0px solid }
-.secret {color : black};
 
 /* floating menu hack
 logic: menu must be inside of obal, it is causing floating functional in Firefox and advanced, and static in
 MSIE and older browser. Not tested if it is adaptive design */
 
 .menu { background-color : #030F2C ; 
-	font-size: 12pt; 
 	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 11pt; 
+	
 	border: solid;  
         border-width: 1px; 
 	border-color: #4F628E;
@@ -80,12 +80,6 @@ MSIE and older browser. Not tested if it is adaptive design */
 	top: 0; 
 	width: 23%; 
 	height: 100%;}
-
-.menu-item span 
-	{
-	border: 1px solid #4F628E;
-  	padding: 5px;
-	}
 
 /* main part, where most of text should be - not tested how adaptive it is */		
 .celek {border: solid;  
