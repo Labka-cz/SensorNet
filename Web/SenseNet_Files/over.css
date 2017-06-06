@@ -72,7 +72,7 @@ MSIE and older browser. Not tested if it is adaptive design */
 .menu-item span {
   		border: 1px solid #4F628E;
   		padding: 5px;
-}"
+		}
 
 /* main part, where most of text should be - not tested how adaptive it is */		
 .celek {border: solid;  
