@@ -10,12 +10,13 @@ INVERTED VERSION: czech flag colourscheme, 0.1
 /*#D0D0D0*/
 /* main definition: background an foregrount colour, font family */
 body {
-	background-color : #ffffff ; 
+	background-color : #6c1037 ; 
 	color: black  ; 
 	font-size: 11pt; 
 	font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;
-	background-image: url("background.PNG");
-    	background-repeat: round;} 
+	/*background-image: url("background.PNG");
+    	background-repeat: round;*/
+	} 
 table {background-color : #ffffff ; color: black  ; font-size: 11pt; font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;} 
 
 /*firebrick*/
@@ -46,7 +47,8 @@ a:hover   {color: firebrick ; text-decoration:none}
 logic: menu must be inside of obal, it is causing floating functional in Firefox and advanced, and static in
 MSIE and older browser. Not tested if it is adaptive design */
 
-.menu { background-color : #ffffff ; color: black  ; font-size: 9pt; font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;
+.menu { background-color : #114670 ; 
+	color: black  ; font-size: 9pt; font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;
 	border: solid;  
         border-width: 1px; 
         padding: 10px;
