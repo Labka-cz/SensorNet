@@ -2,6 +2,7 @@
 written mostly by Over@labka.cz, 3 colum design is adapted version from https://codepen.io        
 last update: 1 Jun 2017
 palete taken from: http://paletton.com/#uid=13L0u0kllllaFw0g0qFqFg0w0aF
+fonts designed by: http://www.cssfontstack.com/Arvo
 license: MIT
 INVERTED VERSION: czech flag colourscheme, 0.1
  */
@@ -10,11 +11,12 @@ INVERTED VERSION: czech flag colourscheme, 0.1
 
 /*#D0D0D0*/
 /* main definition: background an foregrount colour, font family */
+/* in menu, you should change background color same as in body, if some include is used */
 body {
 	background-color : #030F2C ; 
 	color: #7887AB  ; 
 	font-size: 11pt; 
-	font-family: Arvo;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	/*font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;*/
 	/*background-image: url("background.PNG");
     	background-repeat: round;*/
@@ -70,7 +72,7 @@ a:hover   {color: firebrick ; text-decoration:none}
 logic: menu must be inside of obal, it is causing floating functional in Firefox and advanced, and static in
 MSIE and older browser. Not tested if it is adaptive design */
 
-.menu { background-color : #162955 ; 
+.menu { background-color : #030F2C ; 
 	color: black  ; font-size: 9pt; font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;
 	border: solid;  
         border-width: 1px; 
