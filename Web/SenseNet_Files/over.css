@@ -9,7 +9,13 @@ INVERTED VERSION: czech flag colourscheme, 0.1
 
 /*#D0D0D0*/
 /* main definition: background an foregrount colour, font family */
-body {background-color : #ffffff ; color: black  ; font-size: 11pt; font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;} 
+body {
+	background-color : #ffffff ; 
+	color: black  ; 
+	font-size: 11pt; 
+	font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;
+	background-image: url("background.PNG");
+    	background-repeat: repeat-y;} 
 table {background-color : #ffffff ; color: black  ; font-size: 11pt; font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;} 
 
 /*firebrick*/
