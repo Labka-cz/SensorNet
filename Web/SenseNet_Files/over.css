@@ -12,7 +12,7 @@ INVERTED VERSION: czech flag colourscheme, 0.1
 body {
 	background-color : #030F2C ; 
 	color: #7887AB  ; 
-	font-size: 11pt; 
+	font-size: 12pt; 
 	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	/*background-image: url("background.PNG");
     	background-repeat: round;*/
@@ -61,11 +61,11 @@ logic: menu must be inside of obal, it is causing floating functional in Firefox
 MSIE and older browser. Not tested if it is adaptive design */
 
 .menu { background-color : #030F2C ; 
-	font-size: 13pt; 
+	font-size: 12pt; 
 	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	border: solid;  
         border-width: 1px; 
-	border-color: #7887AB;
+	border-color: #4F628E;
         padding: 10px;
         margin:   3px;
         position: fixed; 
