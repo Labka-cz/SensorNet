@@ -1,6 +1,7 @@
 /* 
 written mostly by Over@labka.cz, 3 colum design is adapted version from https://codepen.io        
 last update: 1 Jun 2017
+palete taken from: http://paletton.com/#uid=13L0u0kllllaFw0g0qFqFg0w0aF
 license: MIT
 INVERTED VERSION: czech flag colourscheme, 0.1
  */
@@ -10,8 +11,8 @@ INVERTED VERSION: czech flag colourscheme, 0.1
 /*#D0D0D0*/
 /* main definition: background an foregrount colour, font family */
 body {
-	background-color : #052b40 ; 
-	color: black  ; 
+	background-color : #2E4172 ; 
+	color: #7887AB  ; 
 	font-size: 11pt; 
 	font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;
 	/*background-image: url("background.PNG");
@@ -47,10 +48,11 @@ a:hover   {color: firebrick ; text-decoration:none}
 logic: menu must be inside of obal, it is causing floating functional in Firefox and advanced, and static in
 MSIE and older browser. Not tested if it is adaptive design */
 
-.menu { background-color : #6c1037 ; 
+.menu { background-color : #162955 ; 
 	color: black  ; font-size: 9pt; font-family: Verdana, "Arial CE", "Helvetica CE", Arial, Helvetica;
 	border: solid;  
         border-width: 1px; 
+	border-color: #7887AB;
         padding: 10px;
         margin:   3px;
         position: fixed; 
