@@ -95,6 +95,9 @@ iframe[seamless] {
 	padding:0; 
 	overflow:hidden;
 }
+
+.text_center {text-align: center;}
+
 /* ============= floating menu hack + invisible iFrame ugly ============= */
 	
 	
