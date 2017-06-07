@@ -11,14 +11,14 @@ INVERTED VERSION: czech flag colourscheme, 0.1
 /* in menu, you should change background color same as in body, if some include is used */
 
 body 
-{ 
-    background-size: 11px 11px;
+{ /*#152B55*/
+    background-size: 10px 10px;
     background-color : #030F2C;
-    background-image: linear-gradient(to right, #152B55 1px, transparent 1px), linear-gradient(to bottom, #152B55 1px, transparent 1px);
+    background-image: linear-gradient(to right, #162a4f  1px, transparent 1px), linear-gradient(to bottom, #162a4f 1px, transparent 1px);
+	color: #7887AB;
+	font-size: 12pt; 
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif; 
 }
-
-
-
 
 /*firebrick*/
 h1{color : firebrick; 
@@ -57,38 +57,55 @@ a:hover   {color: firebrick ; text-decoration:none}
 .obrR   {float : right; margin : 0 5px 0 0; border: 0px solid }
 .obrC   {float : center; margin : 20px 5px 20px 0; border: 0px solid }
 
-/* floating menu hack
+/* ============= floating menu hack + invisible iFrame ugly =============
 logic: menu must be inside of obal, it is causing floating functional in Firefox and advanced, and static in
 MSIE and older browser. Not tested if it is adaptive design */
 
-.menu { background-color : #030F2C ; 
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-	font-size: 10pt; 
-	
-	border: solid;  
-        border-width: 1px; 
-	border-color: #4F628E;
-        padding: 10px;
+.menu { 	background-color : #030F2C ; 
+		font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+		font-size: 10pt; 
+		/*border: none;*/
+		border: solid;  
+        border-width: 0px 1px 0px 0px; 
+		border-color: #4F628E;
+        padding: 2px;
         margin:   3px;
         position: fixed; 
-	top: 0; 
-	right: 77%; 
-	left: 0;
-        }
+		top: 0; 
+		right: 87%; 
+		left: 0;
+		bottom: 1%;
+    }
 
-.obal { border: none;  
+.obal { 	border: none;  
         border-width: 1px;
-	position: fixed; 
-	top: 0; 
-	width: 23%; 
-	height: 100%;}
+		position: fixed; 
+		top: 0; 
+		width: 23%; 
+		height: 100%;
+		bottom: 40%;
+	}
 
+/* border-less iFrame, where seamless is not supported */
+iframe[seamless] {
+	border: none;
+	height: 100%;
+	width: 100%;
+	margin:0; 
+	padding:0; 
+	overflow:hidden;
+}
+/* ============= floating menu hack + invisible iFrame ugly ============= */
+	
+	
+	
 /* main part, where most of text should be - not tested how adaptive it is */		
-.celek {border: solid;  
-        border-width: 1px;
+.celek { border: none;
+		/* border: solid;  
+        border-width: 1px; */
         padding: 10px; 
         margin:  3px;
-        position: absolute; top: 0; left: 23%; right:0%;
+        position: absolute; top: 0; left: 13%; right:0%;
         }
 .usek {
         color: #D0D0D0 ; 
@@ -221,13 +238,4 @@ header, #content, #middle, #sidebar {
 
 
 
-/* border-less iFrame, where seamless is not supported */
-iframe[seamless] {
-	    border: none;
-	height: 245px;
-	width: 100%;
-	margin:0; 
-	padding:0; 
-	overflow:hidden;
-}
 
