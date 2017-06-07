@@ -9,14 +9,16 @@ INVERTED VERSION: czech flag colourscheme, 0.1
 
 /* main definition: background an foregrount colour, font family */
 /* in menu, you should change background color same as in body, if some include is used */
-body {	background-size: 11px 11px;
-    	background-color : #030F2C;
-    	background-image: linear-gradient(to right, #152B55 1px, transparent 1px), linear-gradient(to bottom, #152B55 1px, transparent 1px);
-	font-size: 12pt; 
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif; 
-	/* background-color : #030F2C ; color: #7887AB  ; */
-	/*background-image: url("background.PNG"); background-repeat: round;*/
-	} 
+
+body 
+{ 
+    background-size: 11px 11px;
+    background-color : #030F2C;
+    background-image: linear-gradient(to right, #152B55 1px, transparent 1px), linear-gradient(to bottom, #152B55 1px, transparent 1px);
+}
+
+
+
 
 /*firebrick*/
 h1{color : firebrick; 
