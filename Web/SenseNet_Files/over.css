@@ -9,13 +9,13 @@ INVERTED VERSION: czech flag colourscheme, 0.1
 
 /* main definition: background an foregrount colour, font family */
 /* in menu, you should change background color same as in body, if some include is used */
-body {
-	background-color : #030F2C ; 
-	color: #7887AB  ; 
+body {	background-size: 11px 11px;
+    	background-color : #030F2C;
+    	background-image: linear-gradient(to right, #152B55 1px, transparent 1px), linear-gradient(to bottom, #152B55 1px, transparent 1px);
 	font-size: 12pt; 
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-	/*background-image: url("background.PNG");
-    	background-repeat: round;*/
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif; 
+	/* background-color : #030F2C ; color: #7887AB  ; */
+	/*background-image: url("background.PNG"); background-repeat: round;*/
 	} 
 
 /*firebrick*/
